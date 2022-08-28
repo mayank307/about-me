@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<!--youtube link for the course : https://www.youtube.com/watch?v=5bMdjkfvONE -->
+<head>
+	<meta charset="utf-8" />
+	<title>test.dev</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="nav-wrap">
+			<div class="left-side">
+
+				<div class="nav-link-wrap active-nav-link">
+					<a href="page.html">Home</a>	
+				</div>	
+				
+				<div class="nav-link-wrap">
+					<a href="about.html">About</a>	
+				</div>
+				
+			</div>	
+			<div class="right-side">
+				<div class="brand">
+					<div>MAYANK KUMAR</div>	
+				</div>	
+			</div>			
+		</div>	
+		<div class="content-wrap">
+			<div class="portfolio-items-wrap">
+
+				<div class="portfolio-item-wrap">
+					<div class="portfolio-img-bg" style="background-image: url(images/image01.jpg)"></div>
+					<div class="img-text-wrap">
+						<div class="logo-wrap">
+							<img src="images/logos/logo01.png"  >
+						</div>
+						<div class="subtitle">
+							I built the project01 
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrap">
+					<div class="portfolio-img-bg" style="background-image: url(images/image02.jpg)"></div>
+					<div class="img-text-wrap">
+						<div class="logo-wrap">
+							<img src="images/logos/logo01.png"  >
+						</div>
+						<div class="subtitle">
+							I built the project02 
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrap">
+					<div class="portfolio-img-bg" style="background-image: url(images/image03.jpg)"></div>
+					<div class="img-text-wrap">
+						<div class="logo-wrap">
+							<img src="images/logos/logo01.png" >
+						</div>
+						<div class="subtitle">
+							I built the project03 
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrap">
+					<div class="portfolio-img-bg" style="background-image: url(images/image04.jpg)"></div>
+					<div class="img-text-wrap">
+						<div class="logo-wrap">
+							<img src="images/logos/logo01.png" >
+						</div>
+						<div class="subtitle">
+							I built the project04 
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrap">
+					<div class="portfolio-img-bg" style="background-image: url(images/image05.jpg)"></div>
+					<div class="img-text-wrap">
+						<div class="logo-wrap">
+							<img src="images/logos/logo01.png" >
+						</div>
+						<div class="subtitle">
+							I built the project05 
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrap">
+					<div class="portfolio-img-bg" style="background-image: url(images/image06.jpg)"></div>
+					<div class="img-text-wrap">
+						<div class="logo-wrap">
+							<img src="images/logos/logo01.png" >
+						</div>
+						<div class="subtitle">
+							I built the project06 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+	
+</body>
+<script>
+	const portfolioItems = document.querySelectorAll('.portfolio-item-wrap')
+
+	portfolioItems.forEach(portfolioItem => {
+		portfolioItem.addEventListener('mouseover', () => {
+			portfolioItem.childNodes[1].classList.add('img-darken');
+		})
+
+		portfolioItem.addEventListener('mouseout', () => {
+			portfolioItem.childNodes[1].classList.remove('img-darken');
+		})
+	})
+</script>
+</html>
